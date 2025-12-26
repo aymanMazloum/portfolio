@@ -1,0 +1,23 @@
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+  background-color: #0b5ed7; /* Darker primary */
+}
+
+footer a:hover {
+  color: #0d6efd;
+  transition: color 0.3s;
+}

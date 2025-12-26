@@ -1,0 +1,137 @@
+/* src/components/FluffyHero.css */
+.fluffy-hero-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.fluffy-card {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.fluffy-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fluffy text effect */
+.fluffy-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #203a43;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow:
+     0 0 1px #fff,
+    1px 1px 2px #eee,
+    -1px 1px 2px #eee,
+    1px -1px 2px #eee,
+    -1px -1px 2px #eee,
+    1px 1px 4px #ccc,
+    -1px -1px 4px #ccc,
+    1px -1px 4px #ccc,
+    -1px 1px 4px #ccc,
+    1px -1px 5px #f8f8f8,
+    1px 1px 3px #ddd;
+  animation: fluffMove 3s ease-in-out infinite alternate;
+}
+
+.fluffy-text-writer {
+  text-transform: uppercase;
+  text-shadow:
+    0 0 2px #fff,
+    1px 1px 2px #eee,
+    -1px 1px 2px #eee,
+    1px -1px 2px #eee,
+    -1px -1px 2px #eee,
+    2px 2px 4px #ccc,
+    -2px -2px 4px #ccc,
+    2px -2px 4px #ccc,
+    -2px 2px 4px #ccc,
+    0 0 5px #f8f8f8,
+    1px 1px 3px #ddd;
+  animation: fluffMove 3s ease-in-out infinite alternate;
+}
+
+@keyframes fluffMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(2px); }
+}
+
+/* Fluffy moving layers background */
+.fluffy-layer {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05), transparent 70%);
+  filter: blur(25px);
+  animation: moveFluff 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fluffy-layer1 { animation-delay: 0s; }
+.fluffy-layer2 { animation-delay: 5s; }
+.fluffy-layer3 { animation-delay: 10s; }
+
+@keyframes moveFluff {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(50px, 30px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Buttons hover */
+button.btn-primary:hover,
+button.btn-outline-light:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.writer {
+  color: royalblue;
+}
+
+
+.hero-section {
+  position: relative;
+  margin-top: -70px; /* 🔥 تبلع الموجة */
+  padding-top: 140px;
+
+  background: linear-gradient(
+    180deg,
+    #0f2027 0%,
+    #203a43 50%,
+    #2c5364 100%
+  );
+
+  /* Fluffy vibe */
+  filter: saturate(1.1);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  background: radial-gradient(
+    ellipse at top,
+    rgba(255,255,255,0.25),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.my_name{
+  color: royalblue;
+}

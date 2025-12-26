@@ -1,0 +1,41 @@
+/* الخط للنصوص العادية */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* الخط للعناوين */
+h1, h2, h3, h4, h5, h6, .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+
+body[data-theme="light"] {
+  --bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text-color: #212529;
+  --primary-color: #0d6efd;
+  
+  --hero-bg: linear-gradient(135deg, #f8f9fa, #e9ecef, #dee2e6);
+  --hero-color: #212529;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --primary-color: #410081;
+  
+  --hero-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --hero-color: #ffffff;
+}
+
+
+/* تطبيق المتغيرات على الموقع */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+a, .btn-primary {
+  color: var(--primary-color);
+}
