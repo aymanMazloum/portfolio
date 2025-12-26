@@ -20,7 +20,7 @@ const projectsData = [
     description: "My own React portfolio website",
     image: "/assets/portfolio.png",
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/aymanMazloum/portfolio",
   },
   {
     title: "E-commerce Mini App",
