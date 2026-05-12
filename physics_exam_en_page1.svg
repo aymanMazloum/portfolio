@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754">
+  <rect width="1240" height="1754" fill="#ffffff"/>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; fill: #111; }
+    .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111; }
+    .text { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #111; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #111; }
+    .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #111; }
+    .bold { font-weight: 700; }
+    .box { fill: none; stroke: #111; stroke-width: 3; }
+    .wire { fill: none; stroke: #111; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .thin { fill: none; stroke: #111; stroke-width: 3; stroke-linecap: round; }
+  </style>
+
+  <!-- Page border -->
+  <rect x="42" y="42" width="1156" height="1670" rx="8" class="box"/>
+
+  <!-- Header -->
+  <text x="80" y="100" class="small">School: ________________________________</text>
+  <text x="80" y="150" class="small">Name: _________________________________</text>
+  <text x="760" y="100" class="small">Date: ____ / ____ / ______</text>
+  <text x="760" y="150" class="small">Class: Grade 7</text>
+
+  <text x="620" y="230" class="title" text-anchor="middle">PHYSICS TEST</text>
+  <text x="620" y="282" class="subtitle" text-anchor="middle">Electric Circuit and Electric Measurement</text>
+  <text x="620" y="328" class="small" text-anchor="middle">Duration: 50 minutes        Mark: /20</text>
+
+  <line x1="80" y1="365" x2="1160" y2="365" stroke="#111" stroke-width="3"/>
+
+  <!-- Question 1 -->
+  <text x="80" y="420" class="subtitle">Question 1: Circle the correct answer. /4</text>
+  <text x="100" y="474" class="text">1. A closed electric circuit allows the flow of:</text>
+  <text x="130" y="516" class="text">a) air        b) electric current        c) sound</text>
+
+  <text x="100" y="572" class="text">2. An ammeter is connected in:</text>
+  <text x="130" y="614" class="text">a) series        b) parallel        c) outside the circuit</text>
+
+  <text x="100" y="670" class="text">3. A voltmeter is connected in:</text>
+  <text x="130" y="712" class="text">a) series        b) parallel        c) place of the battery</text>
+
+  <text x="100" y="768" class="text">4. When the switch is open, the lamp is:</text>
+  <text x="130" y="810" class="text">a) on        b) off        c) brighter</text>
+
+  <!-- Question 2 -->
+  <text x="80" y="890" class="subtitle">Question 2: Observe the circuit and answer. /4</text>
+
+  <!-- Circuit diagram open switch -->
+  <g transform="translate(118,930)">
+    <rect x="0" y="0" width="450" height="300" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <!-- wires -->
+    <path d="M80 95 L80 42 L365 42 L365 112" class="wire"/>
+    <path d="M365 188 L365 250 L80 250 L80 186" class="wire"/>
+    <!-- battery -->
+    <line x1="55" y1="95" x2="105" y2="95" class="wire"/>
+    <line x1="55" y1="185" x2="105" y2="185" class="wire"/>
+    <line x1="80" y1="95" x2="80" y2="118" class="wire"/>
+    <line x1="80" y1="162" x2="80" y2="185" class="wire"/>
+    <line x1="62" y1="118" x2="62" y2="162" stroke="#111" stroke-width="5"/>
+    <line x1="98" y1="110" x2="98" y2="170" stroke="#111" stroke-width="8"/>
+    <text x="30" y="90" class="tiny">+</text>
+    <text x="28" y="194" class="tiny">-</text>
+    <text x="42" y="220" class="tiny">battery</text>
+    <!-- lamp -->
+    <circle cx="365" cy="150" r="40" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="338" y1="123" x2="392" y2="177" stroke="#111" stroke-width="4"/>
+    <line x1="392" y1="123" x2="338" y2="177" stroke="#111" stroke-width="4"/>
+    <text x="342" y="225" class="tiny">lamp</text>
+    <!-- open switch -->
+    <line x1="205" y1="250" x2="250" y2="250" class="wire"/>
+    <circle cx="205" cy="250" r="7" fill="#111"/>
+    <circle cx="300" cy="250" r="7" fill="#111"/>
+    <line x1="250" y1="232" x2="300" y2="250" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+    <text x="218" y="285" class="tiny">open switch</text>
+  </g>
+
+  <text x="610" y="980" class="text">1. Name the components of the circuit:</text>
+  <line x1="645" y1="1025" x2="1135" y2="1025" stroke="#111" stroke-width="2"/>
+  <text x="610" y="1085" class="text">2. Is the lamp on or off?</text>
+  <line x1="645" y1="1130" x2="1135" y2="1130" stroke="#111" stroke-width="2"/>
+  <text x="610" y="1190" class="text">3. Explain your answer:</text>
+  <line x1="645" y1="1235" x2="1135" y2="1235" stroke="#111" stroke-width="2"/>
+  <text x="610" y="1295" class="text">4. What should we do to turn on the lamp?</text>
+  <line x1="645" y1="1340" x2="1135" y2="1340" stroke="#111" stroke-width="2"/>
+
+  <!-- Question 3 -->
+  <text x="80" y="1410" class="subtitle">Question 3: Write True or False. /3</text>
+  <text x="100" y="1465" class="text">1. An open switch allows electric current to pass. __________</text>
+  <text x="100" y="1525" class="text">2. A battery is a source of electrical energy. __________</text>
+  <text x="100" y="1585" class="text">3. A voltmeter measures electrical voltage. __________</text>
+
+  <!-- Footer -->
+  <text x="620" y="1670" class="small" text-anchor="middle">Page 1 / 2</text>
+</svg>

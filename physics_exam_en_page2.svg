@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754">
+  <rect width="1240" height="1754" fill="#ffffff"/>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; fill: #111; }
+    .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111; }
+    .text { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #111; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #111; }
+    .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #111; }
+    .box { fill: none; stroke: #111; stroke-width: 3; }
+    .wire { fill: none; stroke: #111; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <!-- Page border -->
+  <rect x="42" y="42" width="1156" height="1670" rx="8" class="box"/>
+
+  <!-- Header -->
+  <text x="620" y="105" class="title" text-anchor="middle">PHYSICS TEST</text>
+  <text x="620" y="155" class="subtitle" text-anchor="middle">Electric Circuit and Electric Measurement</text>
+  <line x1="80" y1="200" x2="1160" y2="200" stroke="#111" stroke-width="3"/>
+
+  <!-- Question 4 -->
+  <text x="80" y="260" class="subtitle">Question 4: Electrical measurement. /5</text>
+  <text x="100" y="315" class="text">A. Which circuit shows the ammeter connected correctly?</text>
+
+  <!-- Ammeter circuit A - correct series -->
+  <g transform="translate(95,350)">
+    <text x="205" y="0" class="small" text-anchor="middle">Circuit A</text>
+    <rect x="0" y="25" width="460" height="280" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <path d="M80 165 L80 75 L155 75" class="wire"/>
+    <path d="M225 75 L320 75" class="wire"/>
+    <path d="M390 75 L390 255 L80 255 L80 205" class="wire"/>
+    <!-- battery -->
+    <line x1="60" y1="165" x2="100" y2="165" class="wire"/>
+    <line x1="60" y1="205" x2="100" y2="205" class="wire"/>
+    <line x1="68" y1="172" x2="68" y2="198" stroke="#111" stroke-width="5"/>
+    <line x1="92" y1="165" x2="92" y2="205" stroke="#111" stroke-width="8"/>
+    <text x="38" y="160" class="tiny">+</text>
+    <text x="38" y="215" class="tiny">-</text>
+    <!-- ammeter -->
+    <circle cx="190" cy="75" r="35" fill="#fff" stroke="#111" stroke-width="5"/>
+    <text x="190" y="84" class="small" text-anchor="middle">A</text>
+    <!-- lamp -->
+    <circle cx="355" cy="75" r="35" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="333" y1="53" x2="377" y2="97" stroke="#111" stroke-width="4"/>
+    <line x1="377" y1="53" x2="333" y2="97" stroke="#111" stroke-width="4"/>
+  </g>
+
+  <!-- Ammeter circuit B - wrong parallel -->
+  <g transform="translate(685,350)">
+    <text x="205" y="0" class="small" text-anchor="middle">Circuit B</text>
+    <rect x="0" y="25" width="460" height="280" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <path d="M80 165 L80 75 L310 75 L390 75 L390 255 L80 255 L80 205" class="wire"/>
+    <!-- battery -->
+    <line x1="60" y1="165" x2="100" y2="165" class="wire"/>
+    <line x1="60" y1="205" x2="100" y2="205" class="wire"/>
+    <line x1="68" y1="172" x2="68" y2="198" stroke="#111" stroke-width="5"/>
+    <line x1="92" y1="165" x2="92" y2="205" stroke="#111" stroke-width="8"/>
+    <text x="38" y="160" class="tiny">+</text>
+    <text x="38" y="215" class="tiny">-</text>
+    <!-- lamp -->
+    <circle cx="310" cy="75" r="35" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="288" y1="53" x2="332" y2="97" stroke="#111" stroke-width="4"/>
+    <line x1="332" y1="53" x2="288" y2="97" stroke="#111" stroke-width="4"/>
+    <!-- ammeter parallel branch -->
+    <path d="M260 75 L260 185 L360 185 L360 75" class="wire"/>
+    <circle cx="310" cy="185" r="35" fill="#fff" stroke="#111" stroke-width="5"/>
+    <text x="310" y="194" class="small" text-anchor="middle">A</text>
+  </g>
+
+  <text x="100" y="700" class="text">Answer: Circuit ________</text>
+  <text x="100" y="752" class="text">Reason: ____________________________________________________________</text>
+
+  <text x="100" y="830" class="text">B. Which circuit shows the voltmeter connected correctly?</text>
+
+  <!-- Voltmeter circuit C - correct parallel -->
+  <g transform="translate(95,865)">
+    <text x="205" y="0" class="small" text-anchor="middle">Circuit C</text>
+    <rect x="0" y="25" width="460" height="280" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <path d="M80 165 L80 75 L310 75 L390 75 L390 255 L80 255 L80 205" class="wire"/>
+    <!-- battery -->
+    <line x1="60" y1="165" x2="100" y2="165" class="wire"/>
+    <line x1="60" y1="205" x2="100" y2="205" class="wire"/>
+    <line x1="68" y1="172" x2="68" y2="198" stroke="#111" stroke-width="5"/>
+    <line x1="92" y1="165" x2="92" y2="205" stroke="#111" stroke-width="8"/>
+    <text x="38" y="160" class="tiny">+</text>
+    <text x="38" y="215" class="tiny">-</text>
+    <!-- lamp -->
+    <circle cx="310" cy="75" r="35" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="288" y1="53" x2="332" y2="97" stroke="#111" stroke-width="4"/>
+    <line x1="332" y1="53" x2="288" y2="97" stroke="#111" stroke-width="4"/>
+    <!-- voltmeter parallel branch -->
+    <path d="M260 75 L260 185 L360 185 L360 75" class="wire"/>
+    <circle cx="310" cy="185" r="35" fill="#fff" stroke="#111" stroke-width="5"/>
+    <text x="310" y="194" class="small" text-anchor="middle">V</text>
+  </g>
+
+  <!-- Voltmeter circuit D - wrong series -->
+  <g transform="translate(685,865)">
+    <text x="205" y="0" class="small" text-anchor="middle">Circuit D</text>
+    <rect x="0" y="25" width="460" height="280" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <path d="M80 165 L80 75 L155 75" class="wire"/>
+    <path d="M225 75 L320 75" class="wire"/>
+    <path d="M390 75 L390 255 L80 255 L80 205" class="wire"/>
+    <!-- battery -->
+    <line x1="60" y1="165" x2="100" y2="165" class="wire"/>
+    <line x1="60" y1="205" x2="100" y2="205" class="wire"/>
+    <line x1="68" y1="172" x2="68" y2="198" stroke="#111" stroke-width="5"/>
+    <line x1="92" y1="165" x2="92" y2="205" stroke="#111" stroke-width="8"/>
+    <text x="38" y="160" class="tiny">+</text>
+    <text x="38" y="215" class="tiny">-</text>
+    <!-- voltmeter -->
+    <circle cx="190" cy="75" r="35" fill="#fff" stroke="#111" stroke-width="5"/>
+    <text x="190" y="84" class="small" text-anchor="middle">V</text>
+    <!-- lamp -->
+    <circle cx="355" cy="75" r="35" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="333" y1="53" x2="377" y2="97" stroke="#111" stroke-width="4"/>
+    <line x1="377" y1="53" x2="333" y2="97" stroke="#111" stroke-width="4"/>
+  </g>
+
+  <text x="100" y="1215" class="text">Answer: Circuit ________</text>
+  <text x="100" y="1267" class="text">Reason: ____________________________________________________________</text>
+
+  <!-- Question 5 -->
+  <text x="80" y="1360" class="subtitle">Question 5: Series circuit. /4</text>
+  <text x="100" y="1415" class="text">Observe the circuit, then answer the questions.</text>
+
+  <!-- Series circuit with two lamps and open switch -->
+  <g transform="translate(115,1450)">
+    <rect x="0" y="0" width="515" height="210" rx="10" fill="none" stroke="#111" stroke-width="3"/>
+    <path d="M80 125 L80 45 L170 45" class="wire"/>
+    <path d="M230 45 L330 45" class="wire"/>
+    <path d="M390 45 L445 45 L445 170 L305 170" class="wire"/>
+    <path d="M205 170 L80 170 L80 155" class="wire"/>
+    <!-- battery -->
+    <line x1="60" y1="125" x2="100" y2="125" class="wire"/>
+    <line x1="60" y1="155" x2="100" y2="155" class="wire"/>
+    <line x1="68" y1="130" x2="68" y2="150" stroke="#111" stroke-width="5"/>
+    <line x1="92" y1="123" x2="92" y2="157" stroke="#111" stroke-width="8"/>
+    <text x="38" y="120" class="tiny">+</text>
+    <text x="38" y="165" class="tiny">-</text>
+    <!-- lamps -->
+    <circle cx="200" cy="45" r="30" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="180" y1="25" x2="220" y2="65" stroke="#111" stroke-width="4"/>
+    <line x1="220" y1="25" x2="180" y2="65" stroke="#111" stroke-width="4"/>
+    <text x="184" y="98" class="tiny">X1</text>
+    <circle cx="360" cy="45" r="30" fill="none" stroke="#111" stroke-width="5"/>
+    <line x1="340" y1="25" x2="380" y2="65" stroke="#111" stroke-width="4"/>
+    <line x1="380" y1="25" x2="340" y2="65" stroke="#111" stroke-width="4"/>
+    <text x="344" y="98" class="tiny">X2</text>
+    <!-- open switch -->
+    <line x1="205" y1="170" x2="245" y2="170" class="wire"/>
+    <circle cx="205" cy="170" r="7" fill="#111"/>
+    <circle cx="305" cy="170" r="7" fill="#111"/>
+    <line x1="245" y1="152" x2="305" y2="170" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+    <text x="222" y="202" class="tiny">switch</text>
+  </g>
+
+  <text x="680" y="1468" class="text">1. Are the two lamps on?</text>
+  <line x1="715" y1="1512" x2="1135" y2="1512" stroke="#111" stroke-width="2"/>
+  <text x="680" y="1562" class="text">2. What happens if we close the switch?</text>
+  <line x1="715" y1="1606" x2="1135" y2="1606" stroke="#111" stroke-width="2"/>
+  <text x="680" y="1656" class="text">3. If X1 burns out, what happens to X2?</text>
+  <line x1="715" y1="1700" x2="1135" y2="1700" stroke="#111" stroke-width="2"/>
+
+  <text x="620" y="1728" class="small" text-anchor="middle">Page 2 / 2</text>
+</svg>
